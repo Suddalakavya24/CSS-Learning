@@ -1,0 +1,62 @@
+/* INHERITANCE */
+body {
+  color: red;
+  font-family: monospace;
+  line-height: 1em;
+  background-color: rgb(56, 206, 206);
+}
+div {
+  color: blue;
+  border: 3px solid black;
+  background-color: pink;
+}
+h2 {
+  color: green;
+  background-color: brown;
+}
+
+/* last rule and specifity(last styling is considered) */
+h3 {
+  color: violet;
+}
+h3 {
+  color: rgb(255, 165, 0);
+}
+/* though last styling is taken, but in the case of paragraph or headers having class attribute then that class attributes are considered */
+.red {
+  color: red;
+}
+p {
+  color: blueviolet;
+}
+/* University selector(least amt of specificity */
+* {
+  color: blue;
+}
+
+/* colour properties,140 colour names */
+/* RGB red green blue(0-255) */
+#first {
+  color: rgb(255, 165, 0);
+  background-color: rgb(214, 34, 70);
+}
+#second {
+  color: rgb(214, 34, 70);
+  background: rgb(255, 165, 0);
+}
+/* rgba 0-1 opacity/transperancy*/
+#three {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* css hsl hex values
+#RRGGBB
+1 2 3 4 5 6 7 8 9 A(10) B(11) C(12) D(13) E(14) F(15)
+
+#FF0000------>RED
+#00FF00------>GREEN
+*/
+#four {
+  color: rgb(238, 22, 184);
+  background-color: #0f0;
+}

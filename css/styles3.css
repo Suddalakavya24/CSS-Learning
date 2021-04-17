@@ -1,0 +1,61 @@
+/* font size,width,height,pixels */
+h1 {
+  font-size: 50px;
+  width: 400px;
+  height: 70px;
+  background-color: blue;
+}
+/* percent values-Relative to the parent
+
+inner div is relative to outer div*/
+.outer {
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+}
+.inner {
+  width: 70%;
+  height: 50%;
+  background-color: brown;
+}
+
+/* em value is relative 
+l em = 16px in default browserstyle
+it can change if settings in browser changes may be , it can become 1em= more than 16px
+l em=base value*/
+.relative {
+  font-size: 1.5em;
+}
+.absolute {
+  font-size: 48px;
+}
+/* div {
+  font-size: 10px;
+} */
+/* root is html tag
+rem=depends/relative only on root */
+html {
+  font-size: 32px;
+}
+div {
+  font-size: 40px;
+}
+
+/* vh-height-percent of the screen
+   vw-width-percent of the screen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.banner {
+  width: 50vw;
+  height: 50vh;
+  background-color: brown;
+}
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+}
+
